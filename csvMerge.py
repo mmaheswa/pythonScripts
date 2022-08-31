@@ -10,11 +10,6 @@ csv_files = glob.glob(os.path.join(path, "*.csv"))
 # Define the formateed CSV Header.
 modifiedHeaders = ['tagLine','followerCount','website','domain','industry','companySize','headquarters','CompanyType','founded','specialties','companyAddress','mainCompanyID','industryCode','salesNavigatorLink','employeesOnLinkedIn','query','timestamp','companyUrl','phone','isClaimable','DataError','linkedinID','companyName']
 
-def checkFieldNull(fieldName):
-    if(fieldName != ''):
-        return fieldName
-    else:
-        return ''
 print("------------------------------------------------------")
 print("Converting CSV files !!")
 print("------------------------------------------------------")
